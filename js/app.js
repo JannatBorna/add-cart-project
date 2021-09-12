@@ -15,7 +15,7 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
       <div>
-    <img class="product-image" src=${image}></img>
+    <img class="product-image" src="${product?.image}"></img>
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
@@ -72,7 +72,7 @@ const updateTaxAndCharge = () => {
 };
 
 //grandTotal update function
-const updateTotal = () => {
+const updateTotal = (id, value) => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
