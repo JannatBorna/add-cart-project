@@ -49,7 +49,7 @@ body {
   transition: 0.6s;
 }
 .single-product:hover {
-  background-color: rgb(196, 181, 150) !important;
+  background-color: rgb(231, 224, 209) !important;
   box-shadow: 4px 4px 7px rgb(60, 61, 68);
   border-radius: 10px;
   border: 1px solid rgb(90, 100, 131);
