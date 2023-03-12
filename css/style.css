@@ -4,6 +4,18 @@ body {
 }
 
 /*-------search bar---------*/
+#search-btn{
+  padding: 0.5em;
+  margin-left: -3px;
+  width: 40%;
+  color: white;
+  background-color: brown;
+  border: 1px solid brown;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  letter-spacing: 3px;
+}
+
 .search-field {
   border: none;
   border-radius: 50px;
@@ -16,9 +28,9 @@ body {
   
 }
 .search-box {
-  border: 1px solid rgb(138, 204, 195) !important;
+  border: 1px solid brown !important;
   width: 281px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin: auto;
   margin-top: 45px;
   border-right: 10px;
@@ -27,7 +39,7 @@ body {
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 20px;
-  background-color: rgb(129, 194, 199) !important;
+  background-color: #81c2c7 !important;
   
 }
 
@@ -35,24 +47,30 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   text-align: center;
   width: 100%;
   margin: auto;
+  margin-top: 60px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(243, 241, 241);
+  /* background-color: #f3f1f1; */
 } 
   
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  /* border: 1px solid #a5a5a5; */
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
 }
   
 .single-product:hover {
-  background-color: rgb(255, 244, 222) !important;
-  box-shadow: 4px 4px 7px rgb(60, 61, 68);
+  background-color: #fceeee !important;
+  box-shadow: 4px 4px 7px #3c3d44;
   border-radius: 10px;
-  border: 1px solid rgb(90, 100, 131);
+  border: none;
 }
 .product-image {
   width: 150px;
@@ -62,11 +80,11 @@ body {
 /*-------card---------- */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 20px;
+   margin-top: 60px;
   position: fixed;
 }
 .cart-main {
@@ -82,7 +100,6 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
